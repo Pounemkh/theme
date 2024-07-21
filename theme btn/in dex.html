@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Dark and Light Theme Buttons</title>
+  <style>
+    body.dark-theme {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<button id="darkButton" class="btn btn-dark">Dark Theme</button>
+<button id="lightButton" class="btn btn-light">Light Theme</button>
+
+<script>
+  document.getElementById('darkButton').addEventListener('click', function() {
+    document.body.classList.add('dark-theme');
+  });
+
+  document.getElementById('lightButton').addEventListener('click', function() {
+    document.body.classList.remove('dark-theme');
+  });
+</script>
+
+</body>
+</html>
